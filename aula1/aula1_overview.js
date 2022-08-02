@@ -106,6 +106,7 @@ setTimeout(function(){
 
 // Objetos
 
+//JSON com chave-valor
 var pessoa = {
     'nome': 'Maria Silva', //string
     'idade': 25, //inteiro
@@ -119,9 +120,10 @@ var pessoa = {
             'nome': 'José Silva', 
             'idade': 2
         }
-    ]
+    ] //array de objetos
 
 }
+
 console.log(pessoa)
 
 //console.log(typeof(pessoa)) //object
