@@ -73,4 +73,55 @@ for(i in comidas_prediletas){
 
 // Funções
 
-// 
+var siglas = ['bh', 'sp', 'poa']
+///console.log(siglas[0].toUpperCase())
+
+function acertarSigla(sigla){
+    var sigla_final = sigla.toUpperCase()
+    return sigla_final
+}
+
+console.log(acertarSigla(siglas[0]))
+console.log(acertarSigla(siglas[1]))
+console.log(acertarSigla(siglas[2]))
+
+
+var siglas = ['bh-mg', 'sp-sp', 'poa-rs']
+///console.log(siglas[0].toUpperCase())
+
+function acertarSigla(sigla){
+    var sigla_final = sigla.toUpperCase().split('-')[0]
+    return sigla_final
+}
+
+console.log(acertarSigla(siglas[0]))
+console.log(acertarSigla(siglas[1]))
+console.log(acertarSigla(siglas[2]))
+
+//função anônima
+setTimeout(function(){
+    console.log('atrasado')
+}, 5000)
+
+
+// Objetos
+
+var pessoa = {
+    'nome': 'Maria Silva', //string
+    'idade': 25, //inteiro
+    'instrumentos': ['guitarra', 'bateria', 'saxofone'], //array de strings
+    'filhos': [
+        {
+            'nome': 'Joana Silva', 
+            'idade': 6
+        },
+        {
+            'nome': 'José Silva', 
+            'idade': 2
+        }
+    ]
+
+}
+console.log(pessoa)
+
+//console.log(typeof(pessoa)) //object
