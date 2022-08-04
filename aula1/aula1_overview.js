@@ -91,6 +91,7 @@ var siglas = ['bh-mg', 'sp-sp', 'poa-rs']
 
 function acertarSigla(sigla){
     var sigla_final = sigla.toUpperCase().split('-')[0]
+    //console.log(sigla_final)
     return sigla_final
 }
 
